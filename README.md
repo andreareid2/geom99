@@ -1,2 +1,2 @@
-# geom99
-Fleming web GIS course GEOM99 - final project
+# resume
+Personal website and resume

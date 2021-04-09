@@ -1,0 +1,531 @@
+
+html, body {
+	background-color: #111111;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*********** SIDEBAR LEFT ************/
+/* Source: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+#btn {
+	position: fixed;
+	text-align: left;
+	background-color: rgb(0,0,0,0.6);
+}
+
+
+/*********** SIDEBAR RIGHT ************/
+/* Source: https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp */
+
+
+.sidebarRight {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.sidebarRight a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebarRight a:hover {
+  color: #f1f1f1;
+}
+
+.sidebarRight .closebtnRight {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+}
+
+.openbtnRight {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtnRight:hover {
+  background-color: #444;
+}
+
+#mainRight {
+  transition: margin-right .5s;
+}
+
+#btnRight {
+	text-align: right;
+	width: 100%;
+	float: right;
+    width: auto;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/******** Block elements **********/
+
+header {
+	display: block;
+	text-align: center;
+	color: white;
+	background-image: url("images/Calanda_Silene_crop.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+    padding-bottom: 40px;
+	width: 100%;
+	min-height: 500px;
+	max-height: 100px;
+}
+
+div.header {	
+	display: block;
+    width: 100%;
+    margin-left: 0;
+    max-height: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+	background-color: RGB(14,61,85,0.6);
+}
+
+h1 {
+	margin-top: 0px;
+}
+
+h2 {
+	color: #4d9b98;
+	padding-bottom: 15px;
+	margin-top: 15px;
+	text-align: left;
+}
+
+h2.line {
+	border-bottom-style: solid;
+	border-bottom-color: gray;
+	border-bottom-width: thin;
+	width: 50%;
+}
+
+h3.sections {
+	color: #c7e1efe0;
+	text-align: left;
+	margin-bottom: 16px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+h3.infoWin {
+	color: #0f364a;
+    font-size: 20px;
+	text-align: center;
+}
+
+h3.subtitle {
+	color: white;
+	font-style: italic;
+    font-weight: normal;
+	text-align: center;
+}
+
+h3.education {
+	padding-bottom: 0;
+	padding-top: 20px;
+}
+
+p {
+	color: #c7e1efe0;
+	line-height: 1.5;
+	font-size: 16px;
+	text-align: left;
+}
+
+p.infoWin {
+	color: #0f364a;
+	width: 300px;
+	text-align: center;
+}
+
+a {
+	color: #d89194d9;
+	text-decoration: none;	
+}
+
+section {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 100%;
+}
+
+.bg-color {
+	background-color: rgb(14 61 85 / 60%);
+}
+
+div.about {
+	padding-left: 50px;
+	margin-left: 50px;
+	border-width: 0px 0px 0px 2px;
+	border-style: solid;
+	border-color: #e1abab;
+}
+
+img.profile {
+	display: none;
+	border-radius: 50%;
+	border-color: white;
+	border-bottom-width: 1.5px;
+	margin-bottom: 50px;
+	margin-top: -25px;
+	position: relative;
+	width: 20%;
+	padding: 10px;
+    background-color: #c2d9e4;
+}
+
+img.circle {
+	display: block;
+	float: center;
+	border-radius: 50%;
+	margin-top:80px;
+	margin-bottom:10px;
+}
+
+/********* MAP *********/
+
+#map {
+  height: 500px;
+  padding-left: 20px;
+}
+
+
+/********* SKILLS CHARTS and BARS *********/
+
+/* https://www.tutorialspoint.com/how-to-create-a-skill-bar-with-css*/
+
+.container {
+	display: block;
+	float: left;
+	width: 100px;
+	background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+}
+
+.novice, .beginner, .intermediate, .advanced, .expert {
+	text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 20px;
+	height: 10px;
+}
+
+.novice {
+	width: 20%;
+	background-color: #e1abab;
+}
+
+.beginner {
+	width: 40%;
+	background-color: #f48f8f;
+}
+
+.intermediate {
+	width: 60%;
+	background-color: #c76767;	
+}
+
+.advanced {
+	width: 80%;
+	background-color: #ab4a4a;	
+}
+
+.expert {
+	width: 100%;
+	background-color: #8d3838;	
+}
+
+.skills-body {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.skills {
+	margin-left: auto;
+	margin-right: auto;
+}
+.skills-chart {
+	float: left;
+	padding-bottom: 25px;
+}
+
+.skills-name{
+	display: block;
+	float: left;
+	width: 170px;
+	margin: 0px;
+	text-align: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #c7e1efe0;
+}
+
+.skills-bar {
+	display: block;
+	float: left;
+	padding: 2px;
+}
+
+h3.skills {
+	color: #c7e1efe0;
+	padding: 5px;
+	padding-top: 25px;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+/******* PROFICIENCY SCALE *******/
+
+h3.scale {
+	color: #c7e1efe0;
+	padding-top: 5px;
+	padding-left: 10px;
+	margin-top: 0px;
+}
+
+.scale-bar {
+	display: block;
+	float: left;
+	padding: 5px;
+	width: 100%;	
+}
+
+.scale-box{
+	display: block;
+	float: left;
+	background-color: white;
+    border-radius: 20px;
+	width: 491px;
+	max-width: 80%;
+	box-shadow: 0 0 3px #ccc;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.scale-desc{
+	float: left;
+	max-width: 400px;
+	margin: 0px;
+}
+
+p.scale-desc {
+	padding-left: 10px;
+	color: #c7e1efe0;
+	font-size: 12px;
+}
+
+.height {
+	height: 100%; 
+}
+
+.scale-container {
+	width: 100%;
+}
+
+.sidebar-scale {
+	padding-top: 10px;
+	padding-right: 3px;
+}
+
+/********* FOOTER **********/
+
+footer {
+  width: 100%;
+  float: left;
+  padding: 0;
+  color: white;
+}
+
+.foot-right {
+	display: block;
+	float: center;
+	text-align: right;
+	font-size: 14px;
+	padding-right: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.foot-left {
+	display: block;
+	float: left;
+	text-align: left;
+	font-size: 14px;
+	padding-left: 14px;
+}
+
+.foot-line {
+	display: inline;
+	padding-right: 5px;
+}
+
+.foot-contactme {
+	font-size: 16px;
+}
+
+/********* Social Media Icons **********/
+/*https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 20%;
+}
+
+/********* Columns *********/
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/********* For large screens *********/
+
+@media only screen and (min-width: 800px) {
+
+	img.profile {
+		display: none;
+	}	
+
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	
+}
+
+/********* For small screens *********/
+
+
+@media only screen and (max-width: 800px) {
+	
+	img.circle {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+	}
+	div.about {
+		padding: 0px;
+		margin: 0px;
+		border: none;
+}
+}

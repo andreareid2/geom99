@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Resume</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgdS9-ve8UZGKwEWncCvyCFeBj9fjfzNY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+  
+	<div id="mySidebar" class="sidebar">
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	    <a href="#About">About</a>
+	    <a href="#Projects">Projects</a>
+	    <a href="#Education">Education</a>
+	    <a href="#Experience">Experience</a>
+	    <a href="#Skills">Skills</a>
+	</div>
+	
+	<div id="mySidebarRight" class="sidebarRight">
+	    <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
+			<div class="col-12">
+			<div class="scale-bar">
+				<div class="container scale-container">
+					<div class="expert height">Expert</div>
+				</div>
+			</div>
+			<div class="scale-bar">
+				<div class="container scale-container">
+					<div class="advanced height">Advanced</div>
+				</div>
+			</div>
+			<div class="scale-bar">
+				<div class="container scale-container">
+					<div class="intermediate height">Intermediate</div>
+				</div>
+			</div>
+			<div class="scale-bar">
+				<div class="container scale-container">
+					<div class="beginner height">Beginner</div>
+				</div>
+			</div>
+			<div class="scale-bar">
+				<div class="container scale-container">
+					<div class="novice height">Novice</div>
+				</div>
+			</div>
+			</div>
+			<div class="col-12 sidebar-scale">
+				<p class="scale-desc"><b>Expert</b>: "<i>wrote the book</i>"</p>
+				<p class="scale-desc"><b>Advanced</b>: <i>5+ years, mentor to others</i></p>
+				<p class="scale-desc"><b>Intermediate</b>: <i>2+ years, > one course</i></p>
+				<p class="scale-desc"><b>Beginner</b>: <i>1 to 2 years, > one course</i></p>
+				<p class="scale-desc"><b>Novice</b>: <i>less than 1 year, intro course</i></p>
+			</div>
+	</div>
+
+	<div id="main">
+		<div id="btn">
+			<button class="openbtn" onclick="openNav()">☰</button> 	
+		</div>
+		
+		<header>
+			<div class="header">
+				<h1>Andrea Reid</h1>
+				<h3 class="subtitle">Interactive resume</h3>
+			</div>
+			<img src="images/Profile.jpg" class="profile">
+		</header>
+		
+		<section class="bg-color col-12" id="About">
+		  <div class="col-7">
+			<h2 class="line">About Me</h2>
+			<div>
+			<p>I am an ecologist with experience in biodiversity research and conservation genetics. Throughout my career, I have had the opportunity to work in many different environments across three different continents. 
+			</p>
+			<p>I have worked 'on the ground' in Canada, Ecuador, Switzerland, and Spain, collecting the data necessary for understanding patterns and processes in the natural world. I have worked on experimental fields in the Alps, managing common garden experiments to assess the evolutionary response of an invasive plant species. And I have worked in the lab, designing and implementing methods to help answer ecological questions using molecular tools. 
+			</p>
+			<p>Now, equipped with a new skillset acquired from the GIS Applications Specialist program at Fleming College, I hope to be able to use spatial data to help monitor and conserve our natural world.
+			</p>
+			</div>
+		  </div>
+		  <div class="col-3">
+		   <div class="about">
+			<img src="images/Profile.jpg" alt="Profile photo" width="258.5" height="279.7" class="circle" >
+		   </div>
+		  </div>		  
+		</section>
+
+		<section class="col-12" id="Projects">
+			<h2 class="line">My Projects</h2>
+			<p>Click on the map icons for a brief description of the projects I have worked on in the past.</p>
+			<div id="map"></div>
+			<p>Note: Interactive map created using Google Maps JavaScript API.</p>
+		</section>
+
+		<section class="col-12 bg-color" id="Education">		
+			<h2 class="line">Education</h2>
+		  <div class="col-12">	
+			<h3 class="sections education">GIS Specialist Certificate, Fleming College (in progress)</h3>
+			<p>Applications Specialist Stream</p>
+		  </div>
+		  <div class="col-12">
+			<h3 class="sections education">Master of Science, ETH Zurich (2012)</h3>
+			<p>Thesis: Conservation Genetics of a Rare Plant Species in the Canary Islands.</p>
+		  </div>
+		  <div class="col-12">
+			<h3 class="sections education">Bachelor of Science, University of Guelph (2007)</h3>
+			<p>Major in Marine and Freshwater Biology</p>
+		  </div>
+		</section>	
+
+		<section id="Experience" class="col-12">
+		 <h2 class="line">Work Experience</h2>
+		 <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">ETH Zurich</h3>
+			<p>Zurich, Switzerland<br>
+			Sep 2012 - Aug 2018</p>	
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">Project Manager, Molecular Lab</h3>
+			<p>Development and implementation of genotyping methodologies for understanding the eco-evolutionary trends of different plant study systems. Highlighted projects include: spread of an invasive plant species in the Swiss Alps, species competition and evolution in experimental duckweed communities, and spread of an invasive species to islands in Greece. </p>
+			<p><a href = "https://plantecology.ethz.ch/" class="links">ETH Zurich</a></p>
+		  </div>
+		 </div>
+	     <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">World Wildlife Fund (WWF)</h3>
+			<p>Bellinzona, Switzerland<br>
+			Sep 2011 - Jun 2012</p>	
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">Communications Intern</h3>
+			<p>Produced communications material on the status of the WWF European Alpine Programme's conservation activities in the Alps. </p>
+			<p><a href = "https://wwf.panda.org/knowledge_hub/where_we_work/alps/ealp2/#:~:text=International%20cooperation%20across%20the%20Alps%20is%20key%20to%20saving%20Alpine%20nature.&text=By%20adopting%20the%20ecoregional%20approach,the%20Convention%20on%20Biological%20Diversity." class="links">European Alpine Programme</a></p>
+		  </div>
+		 </div>
+		 <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">University of Zurich</h3>
+			<p>Gran Canaria, Spain<br>
+			Zurich, Switzerland<br>
+			May 2011 - Aug 2011</p>	
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">Scientific Assistant</h3>
+			<p>A short employment opportunity following the completion of my MSc thesis to continue conducting research on the genetic diversity of a rare plant species in the Canary Islands. </p>
+			<p><a href = "https://www.systbot.uzh.ch/en.html" class="links">University of Zurich</a></p>
+		  </div>
+		 </div>
+		 <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">University of Guelph</h3>
+			<p>Guelph, Canada<br>
+			Coastal and Amazonian Ecuador<br>
+			Apr 2007 - Sep 2008</p>
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">Herbarium Technician</h3>
+			<p>Conducted vegetation surveys in Northern Ontario for a study on the effects of forest management on biodiversity. Collected leaf material from a tree species in Ecuador to help characterise genetic diversity within and between populations. </p>
+			<p><a href = "https://biodiversity.uoguelph.ca/collections/herbarium" class="links">University of Guelph</a></p>
+		  </div>
+		 </div>
+		</section>
+
+		<section id="Skills" id="mainRight" class="bg-color col-12 skills">
+			<h2 class="line">Technical Skills</h2>
+			
+			<div id="btnRight">
+				<button class="openbtnRight" onclick="openNavRight()">Reference Scale ☰</button> 	
+			</div>			
+			<div class="skills-body">
+			<div class="skills-chart ">
+				<h3 class="skills">Software</h3>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="intermediate"></div>
+					</div>
+					<p class="skills-name">MS Word</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">ArcGIS Desktop 10.7.1</p>
+				</div>				
+				<div class="skills-bar">
+					<div class="container">
+						<div class="intermediate"></div>
+					</div>
+					<p class="skills-name">MS Excel</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">ArcGIS Pro 2.7.1</p>
+				</div>				
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">MS Access</p>
+				</div>
+				<div class="skills-bar">
+
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">PCI Geomatica</p>					
+				</div>	
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">Visual Studio Code</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">FME Safe Software</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">MAPublisher</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">AutoCAD</p>
+				</div>	
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">Adobe Illustrator</p>
+				</div>					
+			</div>
+			<div class="skills-chart">
+				<h3 class="skills">Tech Languages</h3>
+
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">Python</p>	
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">HTML</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">SQL</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">CSS</p>
+				</div>				
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">ArcPy</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">JavaScript</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">R</p>
+				</div>	
+			</div>
+			<div class="skills-chart">
+				<h3 class="skills">Web Based Platforms</h3>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">ArcGIS Online</p>
+				</div>	
+				<div class="skills-bar">
+					<div class="container">
+						<div class="beginner"></div>
+					</div>
+					<p class="skills-name">GitHub</p>
+				</div>
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">ArcGIS Developers</p>
+				</div>	
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">Google Maps Platform</p>
+				</div>	
+				<div class="skills-bar">
+					<div class="container">
+						<div class="novice"></div>
+					</div>
+					<p class="skills-name">Amazon Web Service</p>
+				</div>					
+			</div>
+		    </div>
+		</section>	
+	</div>
+	<footer>
+	 <div class="foot-left">
+	  <p>Copyright © 2021 Andrea Reid<p>
+	 </div>
+	 <div class="foot-right">
+	  <a href="mailto: reida15@gmail.com?subject=Job Application" class="foot-contactme">Contact Me<i class="fa fa-envelope" id="mail"></i></a>
+	  <p class="foot-line">│</p>
+	  <a href="https://www.linkedin.com/in/andrea-reid-30b8bb81" class="fa fa-linkedin"></a>
+	 </div>
+	</footer>
+  </body>
+</html>
