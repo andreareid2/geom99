@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Resume</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgdS9-ve8UZGKwEWncCvyCFeBj9fjfzNY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+  
+	<div id="mySidebar" class="sidebar">
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	    <a href="#Problem">Problem Statement</a>
+	    <a href="#TechDoc">Technical Documentation</a>
+	    <a href="#UserDoc">User Documentation</a>
+	    <a href="#Tips">Tips and Tricks</a>
+	</div>
+
+	<div id="main">
+		<div id="btn">
+			<button class="openbtn" onclick="openNav()">☰</button> 	
+		</div>
+		
+		<header>
+			<div class="header">
+				<h1>Web Bravo</h1>
+				<h3 class="subtitle">Final Website for Geom99</h3>
+			</div>
+		</header>
+		
+		<section class="bg-color col-12" id="Problem">
+		  <div class="col-12">
+			<h2 class="line">Problem Statement</h2>
+			<div>
+			<p><b>Ideal</b>: An interactive web map that shows solar potential of building roof tops in the City of Peterborough so that public and private property owners can determine if solar panel installations are a viable solution for their buildings. The result should be that there is an increase in private sales of solar panels in Peterborough.
+			</p>
+			<p><b>Reality<b/>: Property owners do not currently have access to a free solar potential survey for buildings in the City of Peterborough and may not know that this solution is viable for them.
+			</p>
+			<p><b>Consequences</b>: Property owners would not have access to freely distributed information on solar potential which could discourage further investigation of solar potential and subsequent solar panel sales. This could hinder the City's progress in reducing its energy consumption and environmental footprint.
+			</p>
+			<p><b>Proposal</b>: A web map showing solar potential of building roof tops in Peterborough that gives information on total roof area available for solar panel installation and the potential energy production possible through solar panel use. Users can either click on their building or search their address to get this information for their property.
+			</p>
+			</div>
+		  </div>
+		  <div class="col-3">
+		   <div class="about">
+
+		   </div>
+		  </div>		  
+		</section>
+
+		<section class="col-12" id="TechDoc">
+			<h2 class="line">Technical Documentation</h2>
+			<p>ArcGIS Experience Builder.</p>
+			<p>Web map.</p>
+		</section>
+
+
+		<section class="col-12 bg-color" id="UserDoc">		
+			<h2 class="line">User Documentation</h2>
+		  <div class="col-12">	
+			<h3 class="sections education">Instructions</h3>
+			<p>What is app for and how to use it.</p>
+		  </div>
+		  <div class="col-12">
+			<h3 class="sections education">Background</h3>
+			<p>Solar power and home energy savings.</p>
+		  </div>
+		</section>	
+
+		<section id="Tips" class="col-12">
+		 <h2 class="line">Tips and Tricks</h2>
+		 <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">Insert Screenshot</h3>
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">Configure webmap pop-ups</h3>
+			<p>Pop-ups can be configured in the Web Map Viewer for the published map service on ArcGIS Online or directly in ArcGIS Pro. In addition to configuration options, the pop-up content can be further customised using Arcade programming language. For instance, if you want calculate a new attribute field.</p>
+		
+		  </div>
+		 </div>
+	     <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">Insert Screenshot</h3>
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">Choose web app layout.</h3>
+			<p>There are a number of different web app layout options, from fully configured templates to a blank workspace. The layout is created by adding widgets (e.g., maps, text boxes, buttons, etc.)</p>
+
+		  </div>
+		 </div>
+		 <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">Insert Screenshot</h3>
+
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">'How to' information</h3>
+			<p>...words words words.... </p>
+		  </div>
+		 </div>
+		 <div class="col-12">
+		  <div class="col-5">
+			<h3 class="sections">Insert Screenshot</h3>
+		  </div>
+		  <div class="col-7"> 
+			<h3 class="sections">Create custom graphs</h3>
+			<p>.....words words words.... </p>
+		  </div>
+		 </div>
+		</section>
+
+	</div>
+	<footer>
+	 <div class="foot-left">
+	  <p>Copyright @ 2021 Andrea Reid<p>
+	 </div>
+	 <div class="foot-right">
+	  <a href="mailto: reida15@gmail.com?subject=Job Application" class="foot-contactme">Contact Me<i class="fa fa-envelope" id="mail"></i></a>
+	  <p class="foot-line">│</p>
+	  <a href="https://www.linkedin.com/in/andrea-reid-30b8bb81" class="fa fa-linkedin"></a>
+	 </div>
+	</footer>
+  </body>
+</html>
