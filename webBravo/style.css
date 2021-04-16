@@ -148,6 +148,10 @@ h3.education {
 	padding-top: 20px;
 }
 
+h3.final {
+	padding-left: 20px;
+}
+
 p {
 	color: #f8f1d2e0;
 	line-height: 1.5;
@@ -184,6 +188,10 @@ div.about {
 	border-width: 0px 0px 0px 2px;
 	border-style: solid;
 	border-color: #e1abab;
+}
+
+div.final {
+	margin-top: 20px;
 }
 
 
