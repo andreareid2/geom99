@@ -222,12 +222,12 @@ footer {
 	padding-bottom: 10px;
 }
 
-.foot-left {
+.foot-center {
 	display: block;
-	float: left;
-	text-align: left;
-	font-size: 14px;
-	padding-left: 14px;
+	float: center;
+	text-align: center;
+	font-size: 12px;
+	padding-left: 12px;
 }
 
 .foot-line {
