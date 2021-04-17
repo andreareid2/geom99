@@ -192,6 +192,9 @@ div.about {
 
 div.final {
 	margin-top: 20px;
+}
+
+div.final-right {
 	padding-left: 30px;
 }
 
@@ -307,5 +310,9 @@ footer {
 		padding: 0px;
 		margin: 0px;
 		border: none;
-}
+	}
+
+	div.final-right {
+		padding-left: 0px;
+	}
 }
