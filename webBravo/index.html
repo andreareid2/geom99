@@ -17,10 +17,10 @@
 	<div id="mySidebar" class="sidebar">
 	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 	    <a href="#Problem">Problem</a>
-	    <a href="#TechDoc">Tech Guide</a>
-	    <a href="#UserDoc">User Guide</a>
+	    <a href="#Process">Process</a>
 	    <a href="#Tips">Tips & Tricks</a>
-	    <a href="#FinalSolution">Solution</a>
+	    <a href="#Final">Solution</a>
+	    <a href="#Final">Documentation</a>
 	</div>
 
 	<div id="main">
@@ -35,7 +35,7 @@
 			</div>
 		</header>
 		
-		<section class="bg-color col-12" id="Problem">
+		<section class="col-12" id="Problem">
 		  <div class="col-12">
 			<h2 class="line">Problem Statement</h2>
 			<div>
@@ -55,25 +55,33 @@
 		   </div>
 		  </div>		  
 		</section>
-
-		<section class="col-12" id="TechDoc">
-			<h2 class="line">Technical Documentation</h2>
-			<p>ArcGIS Experience Builder.</p>
-			<p>Web map.</p>
+		
+		<section class="col-12 bg-color" id="Process">
+			<h2 class="line">Why Experience Builder?</h2>
+			<p>With so many amazing web technologies, it can be a bit overwhelming to choose which one is the best fit. We tested out multiple proprietary and open-source options. Based on the needs of our client and our own skill level, we opted for Esri's Experience Builder - an easily configurable application with nearly instantaneous results.</p>
+			<p>Other technologies that we tried were either aimed at navigating more complicated/multi-layer maps (e.g., Geocortex) or would have taken a lot more time for us to customise/configure in order to obtain a similar result to Experience Builder (e.g., leaflet, mapbox). Experience Builder was a good compromise and resulted in an excellent web solution for our Client's purposes.</p>
+			
+		  	<div class="col-6 pros">
+				<h2 class="line line-half">Pros</h2>
+				<h3 class="sections pros">Core components necessary.</h3>
+				<p>This app will be used by the general public and has a very simple purpose: find a property and understand its solar potential. We thus needed a web app solution that is both simple/intuitive in design, is map-centric, and can be used on multiple devices. In addition, we liked the potential for displaying 2D and 3D layers in one map for future modifications to the app. Experience Builder offers all of this and more. </p>
+				<h3 class="sections pros">Easily configurable.</h3>
+				<p>Following the path of least resistance is key in software development. If a technology has already been created to do something for you, then it is probably a better option to work with that technology than to recreate it yourself. Experience Builder includes the functionality that we need to address our Client's needs, without a steep learning curve, so it is an obvious choice for us.</p>
+				<h3 class="sections pros">Client's preferred choice.</h3>
+				<p>Moreover, our clients work a lot with Esri technology and would like to be able to incorporate the app easily into their ArcGIS platform. Working with Experience Builder makes it very easy to go back and forth between web maps and apps, and presumably from app to app as well.</p>
+			</div>
+			
+			<div class="col-6 cons">
+				<h2 class="line line-half">Cons</h2>
+				<h3 class="sections pros">Not many customisation options.</h3>
+				<p>We quickly discovered that choosing to go the fully configurable app route had its downsides. Noteably, simple customisation tasks (e.g., custom graphs and figures, design ideas) are much harder to do in an app like Experience Builder compared with apps that let you work directly with the code, like leaflet and mapbox. In our case, we were able to do some basic customisation to our popups using Arcade (e.g., simple calculations, graph referencing other layers, etc.); however, we were not satisfied with the final result and would have liked to have more control over our popup design and content.</p>
+				<h3 class="sections pros">Not freely available.</h3>
+				<p>As an Esri web tech solution, Experience Builder is not free and may not be the ideal choice if the Client does not already have an ArcGIS Online user account.</p>
+				<h3 class="sections pros">Difficult to troubleshoot.</h3>
+				<p>Experience Builder is one of Esri's newer technologies and the availability of online help documentation and forums is scarce. This will improve with time, along with the availability of more specialised widgets.</p>
+			</div>
+			
 		</section>
-
-
-		<section class="col-12 bg-color" id="UserDoc">		
-			<h2 class="line">User Documentation</h2>
-		  <div class="col-12">	
-			<h3 class="sections education">Instructions</h3>
-			<p>What is app for and how to use it.</p>
-		  </div>
-		  <div class="col-12">
-			<h3 class="sections education">Background</h3>
-			<p>Solar power and home energy savings.</p>
-		  </div>
-		</section>	
 
 		<section id="Tips" class="col-12">
 		 <h2 class="line">Tips and Tricks</h2>
@@ -115,19 +123,36 @@
 		 </div>
 		</section>
 		
-		<section class="col-12 bg-color" id="FinalSolution">
+		<section class="col-12 bg-color" id="Final">
 			<h2 class="line">Final Solution</h2>
-		  	<div class="col-6 final">
-				<a href="https://experience.arcgis.com/experience/346690d2fe47480aabfb9c0a72ef1141/?draft=true">
-				<img src="images/ExperienceBuilderMap.jpg" alt="Web App Solution" width="100%">
-				</a>
+			<p>Our final web app solution was created using Esri's ArcGIS Experience Builder. <a href="https://experience.arcgis.com/experience/346690d2fe47480aabfb9c0a72ef1141/?draft=true">Click here</a> to view the application or use the interactive iframe below. Further details can be found in the following documentation.</p>
+			<p><b>How to create this app: </b><a href="">Link to Technical Documentation</a></p>
+			<p><b>How to use this app: </b><a href="">Link to User Documentation</a></p>
+			
+			<div class="iframe">
+			<iframe src="https://experience.arcgis.com/experience/346690d2fe47480aabfb9c0a72ef1141/?draft=true" title="Rooftop Solar Potential Web App - Final Solution" width="100%" height="500"></iframe>
 			</div>
-			<div class="col-6 final-right">
-				<h3 class="sections final">Web App Solution</h3>
-				<p>We created a web app using ArcGIS Experience Builder. Click on the image to view the application.</p>
+			<h2 class="line line-half">Snapshots</h2>
+			<div class="col-6 snapshot">
+				<img src="images/ExperienceBuilderMap.jpg" alt="Web App Solution" width="100%">
+			</div>
+			<div class="col-6 snapshot">
+				<img src="images/ExpBuilder_About.jpg" alt="Web App Solution" width="100%">
+			</div>
+			<div class="col-6 snapshot">
+				<img src="images/ExpBuilder_popup.jpg" alt="Web App Solution" width="100%">
+			</div>
+			<div class="col-6 snapshot">
+				<img src="images/ExpBuilder_graph.jpg" alt="Web App Solution" width="100%">
+			</div>
+			<div class="col-6 snapshot">
+				<img src="images/ExpBuilder_iphone.jpg" alt="Web App Solution" width="100%">
+			</div>
+			<div class="col-6 snapshot">
+				<img src="images/ExpBuilder_ipad.jpg" alt="Web App Solution" width="100%">
+			</div>
 			</div>
 		</section>
-
 	</div>
 	<footer>
 	 <div>

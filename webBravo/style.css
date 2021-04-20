@@ -88,7 +88,7 @@ header {
 	background-size: cover;
 	margin: 0px;
 	padding: 0px;
-        padding-bottom: 40px;
+    padding-bottom: 40px;
 	width: 100%;
 	min-height: 500px;
 	max-height: 100px;
@@ -117,8 +117,12 @@ h2 {
 
 h2.line {
 	border-bottom-style: solid;
-	border-bottom-color: #ff2a00ed;
+	border-bottom-color: #6b5429;
 	border-bottom-width: thin;
+	width: 100%;
+}
+
+h2.line-half {
 	width: 50%;
 }
 
@@ -142,12 +146,7 @@ h3.subtitle {
 	text-align: center;
 }
 
-h3.education {
-	padding-bottom: 0;
-	padding-top: 20px;
-}
-
-h3.final {
+h3.pros {
 	margin-top: 0px;
 }
 
@@ -189,13 +188,22 @@ div.about {
 	border-color: #e1abab;
 }
 
-div.final {
+div.pros {
 	margin-top: 20px;
 }
 
-div.final-right {
+div.cons {
 	margin-top: 20px;
 	padding-left: 30px;
+}
+
+div.snapshot {
+	padding: 20px;
+}
+
+div.iframe {
+	margin-bottom: 30px;
+	margin-top:30px;
 }
 
 div.tips-img {
