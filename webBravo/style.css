@@ -163,6 +163,10 @@ p.infoWin {
 	text-align: center;
 }
 
+p.footer {
+	text-align: center;
+}
+
 a {
 	color: #d89194d9;
 	text-decoration: none;	
