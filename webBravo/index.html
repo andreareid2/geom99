@@ -87,7 +87,7 @@
 	     <div class="col-12">
 		  <div class="col-7 tips-txt"> 
 			<h3 class="sections">Experience Builder</h3>
-			<p>Experience Builder offers much functionality for configuring a multi-page application for showing web maps in 2D or 3D. There are a number of different web app layout options, from fully configured templates to a blank workspace. The layout is created by adding widgets (e.g., maps, text boxes, buttons, etc.). However, unless you have access to the Developer's Edition (and the know-how for using it), the app does not offer a whole lot of customisation options.</p>
+			<p>Experience Builder offers much functionality for configuring a multi-page application for showing web maps in 2D or 3D. There are a number of different web app layout options, from fully configured templates to a blank workspace. The layout is created by adding widgets (e.g., maps, text boxes, buttons, etc.). However, unless you have access to the Developer's Edition (and the know-how for using it), we found that the app does not offer a whole lot of customisation options. In the future, we would probably look into the possibility of creating new widgets to better meet our requirements (e.g., a more customised graphing option that can show both the selected feature against the total distribution of attribute values). Additionally, we would ideally combine experience builder with a more appropriate app platform for showcasing statistics, such as Dashboards.</p>
 		  </div>
 		  <div class="col-5 tips-img">
 			<img src="images/ExperienceBuilderApp.jpg" alt="Experience Builder" width="100%">
@@ -96,7 +96,7 @@
 		 <div class="col-12">
 		  <div class="col-7 tips-txt"> 
 			<h3 class="sections">Configure pop-ups in Map Viewer</h3>
-			<p>Pop-ups can be configured in the Web Map Viewer for the published map service on ArcGIS Online. In addition to configuration options, the pop-up content can be further customised using Arcade programming language. For instance, if you want calculate a new attribute field.</p>
+			<p>After much trial and error, we finally figured out that pop-ups must be configured in the Map Viewer application (not in Experience Builder) for the published map service on ArcGIS Online. In addition to configuration options, the pop-up content can be further customised using Arcade programming language. For instance, if you want calculate a new attribute field or letter the currently selected layer "talk" to another layer.</p>
 		  </div>
 		  <div class="col-5 tips-img">
 			<img src="images/PopupConfig.jpg" alt="Configure Pop-ups in the new Web Map Viewer" width="100%">
@@ -105,7 +105,7 @@
 		 <div class="col-12">
 		  <div class="col-7 tips-txt"> 
 			<h3 class="sections">Don't be afraid to learn Arcade!</h3>
-			<p>Customised content displayed in pop-ups can offer a much more interesting user experience. This can be accomplished with very simple Arcade expressions. With a basic knowledge of programming languages and a bit of google searching, you will have no problem finding a solution to display your data more effectively. </p>
+			<p>To make the map pop-up content more interesting to users, we wanted to add values that were not readily available in the existing attribute fields. Customised content displayed in pop-ups can offer a much more interesting user experience. This can be accomplished with very simple Arcade expressions. With a basic knowledge of programming languages and a bit of google searching, you will have no problem finding a solution to display your data more effectively. We used Arcade expressions to display information from another layer in the web map (e.g., Address data as shown in the image). We also did some basic statistics to calculate and display averages of attribute fields.</p>
 		  </div>
 		  <div class="col-5 tips-img">
 			<img src="images/Arcade_Address.jpg" alt="Arcade Expression" width="100%">
@@ -114,7 +114,7 @@
 		 <div class="col-12">
 		  <div class="col-7 tips-txt"> 
 			<h3 class="sections">The new Map Viewer is less customisable</h3>
-			<p>In the old Map Viewer, customisation of pop-ups was possible using HTML. This option is not available in the new Map Viewer (for now). The image here shows how users could switch between custom html and more configurable views in the old Map Viewer.</p>
+			<p>In the old Map Viewer, customisation of pop-ups was possible using HTML. Originally, we used this option to modify and customise the content layout/design, as well as to add links and other customised features. The option to directly work in HTML is not available in the new Map Viewer (for now). The image here shows how users could switch between custom HTML and more configurable views in the classic Map Viewer. We hope to see this feature added again to the new Map Viewer!</p>
 		  </div>
 		  <div class="col-5 tips-img">
 			<img src="images/popupsHTML.jpg" alt="Changes to Map Viewer" width="100%">
@@ -135,31 +135,31 @@
 			<div class="col-12 snapshot container-snapshot-txt">
 				<img src="images/ExperienceBuilderMap.jpg" alt="Web App Solution" width="100%" class="image-snapshot">
 				<div class="overlay-snapshot-txt">
-				  <div class="snapshot-text">Overview of App</div>
+				  <div class="snapshot-text">This is what the map page of the app looks like.</div>
 				</div>
 			</div>
 			<div class="col-6 snapshot container-snapshot-txt">
 				<img src="images/ExpBuilder_FAQ.jpg" alt="Web App Solution" width="100%" height="225px" class="image-snapshot">
 				<div class="overlay-snapshot-txt">
-				  <div class="snapshot-text">Click on the info icon for more information about the app.</div>
+				  <div class="snapshot-text">Users can click on the info icon for more information about the app.</div>
 				</div>
 			</div>
 			<div class="col-6 snapshot container-snapshot-txt">
 				<img src="images/ExpBuilder_About.jpg" alt="Web App Solution" width="100%" height="225px" class="image-snapshot">
 				<div class="overlay-snapshot-txt">
-				  <div class="snapshot-text">Click on the link in the menu for more information on solar potential.</div>
+				  <div class="snapshot-text">Users can click on the link in the menu for more information on solar potential.</div>
 				</div>
 			</div>			
 			<div class="col-6 snapshot container-snapshot-txt">
 				<img src="images/ExpBuilder_popup.jpg" alt="Web App Solution" width="100%" height="225px" class="image-snapshot">
 				<div class="overlay-snapshot-txt">
-				  <div class="snapshot-text">Click on a building to see the pop-up information.</div>
+				  <div class="snapshot-text">Users can click on a building to see the pop-up information.</div>
 				</div>
 			</div>
 			<div class="col-6 snapshot container-snapshot-txt">
 				<img src="images/ExpBuilder_graph.jpg" alt="Web App Solution" width="100%" height="225px" class="image-snapshot">
 				<div class="overlay-snapshot-txt">
-				  <div class="snapshot-text">Scroll down in the pop-up to view the selected solar potential relative to averages based on building size.</div>
+				  <div class="snapshot-text">Users can scroll down in the pop-up to view the selected solar potential relative to averages based on building size.</div>
 				</div>
 			</div>
 			<div class="col-6 snapshot container-snapshot-txt">
